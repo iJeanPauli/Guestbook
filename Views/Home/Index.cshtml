@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+
+<div>
+    <font color="blue">
+    Thank you for visiting this page or something along those lines.
+    </font>
+</div><br><br>@Html.TextBox("fontcolor")
+Change textcolor here:
+<form action="Index" method="get">
+    <select name="fontColor">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <input type="submit" value="Change">
+</form>
